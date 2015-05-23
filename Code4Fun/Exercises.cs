@@ -14,6 +14,17 @@ namespace Code4Fun.Exercises
                 {
                     arr.SetValue(i + 1, i);
                 }
+
+                int arrayLength = arr.Length;
+                while (arrayLength > 1)
+                {
+                    arrayLength--;
+                    int k = new Random().Next(arrayLength + 1);
+                    int value = arr[k];
+                    arr[k] = arr[arrayLength];
+                    arr[arrayLength] = value;
+                }  
+
                 return arr;
             }
 
