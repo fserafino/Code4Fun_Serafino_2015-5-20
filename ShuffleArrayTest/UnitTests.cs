@@ -24,7 +24,9 @@ namespace Code4Fun.Tests
         [Test]
         public void ArrayShouldNotContainsDuplicates()
         {
-            
+            int ExpectedArrayLength = new Random().Next(1, Convert.ToInt32(ushort.MaxValue));
+            int[] CurrentArrayLength = new ShuffleArray().GetShuffleArray(ExpectedArrayLength);
+            Assert.That(CurrentArrayLength, Is.Unique);
         }
     }
 }

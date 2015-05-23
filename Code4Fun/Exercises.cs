@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Code4Fun.Exercises
 {
@@ -18,7 +19,8 @@ namespace Code4Fun.Exercises
 
             catch (System.OutOfMemoryException ex)
             {
-                Console.WriteLine("The array is oversized, I can't create it");
+                
+                Trace.WriteLine("The array is oversized, I can't create it");
                 return new int[0];
             }            
         }
