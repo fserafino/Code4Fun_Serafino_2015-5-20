@@ -84,7 +84,10 @@ namespace Code4Fun.Tests
         [Test]
         public void TestThree()
         {
-
+            string StringToBeEncoded = "hi";
+            string ExpectedString = "44_444";
+            string CurrentString = new PhoneKeypad().GetTheEncodedString(StringToBeEncoded);
+            Assert.AreEqual(ExpectedString, CurrentString);
         }
 
         [Test]

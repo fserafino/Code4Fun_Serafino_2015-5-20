@@ -80,7 +80,7 @@ namespace Code4Fun.Exercises
             {
                 if (translation.TryGetValue(inputArray[i], out tempValue))
                 {
-                    if (i > 0 && inputArray[i] == inputArray[i - 1])
+                    if (i > 0 && translation[inputArray[i]].StartsWith(translation[inputArray[i-1]].Substring(0,1)))
                     {
                         output.Append("_");
                     }
