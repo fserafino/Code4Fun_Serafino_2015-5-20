@@ -91,7 +91,7 @@ namespace Code4Fun.Exercises
                 else
                 {
                     output.Clear();
-                    output.AppendLine("Error, one or more characters not allowed");
+                    output.Append("Error, one or more characters not allowed");
                     break;
                 }
             }

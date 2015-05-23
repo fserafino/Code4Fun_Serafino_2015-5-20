@@ -57,7 +57,10 @@ namespace Code4Fun.Tests
         [Test]
         public void SpecialCharactersNotAllowed()
         {
-
+            string StringToBeEncoded = "h*el^l3o Wo)ld";
+            string ExpectedString = "Error, one or more characters not allowed";
+            string CurrentString = new PhoneKeypad().GetTheEncodedString(StringToBeEncoded);
+            Assert.AreEqual(ExpectedString, CurrentString);
         }
 
         [Test]
