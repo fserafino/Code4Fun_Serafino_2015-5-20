@@ -10,7 +10,7 @@ namespace Code4Fun.Tests
 {
     [TestFixture]
 
-    public class ShuffleArrayTest
+    public class UnitTests
 
     {
         [Test]
