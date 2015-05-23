@@ -28,5 +28,21 @@ namespace Code4Fun.Tests
             int[] CurrentArrayLength = new ShuffleArray().GetShuffleArray(ExpectedArrayLength);
             Assert.That(CurrentArrayLength, Is.Unique);
         }
+
+        [Test]
+        public void ArrayMinimumIsOne()
+        {
+            int ExpectedMinimum = 1;
+            int CurrentMinimum = new ShuffleArray().GetShuffleArray(new Random().Next(1, Convert.ToInt32(ushort.MaxValue))).Min();
+            Assert.AreEqual(ExpectedMinimum, CurrentMinimum);
+        }
+
+        [Test]
+        public void ArrayMaximumIsEqualToItsLength()
+        {
+            int ExpectedMaximum = new Random().Next(1, Convert.ToInt32(ushort.MaxValue));
+            int CurrentMaximum = new ShuffleArray().GetShuffleArray(ExpectedMaximum).Max();
+            Assert.AreEqual(ExpectedMaximum, CurrentMaximum);
+        }
     }
 }
