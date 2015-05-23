@@ -16,7 +16,8 @@ namespace Code4Fun.Tests
         [Test]
         public void ArrayShouldContainsNItems()
         {
-            
+            int CurrentArrayLength = new Random().Next();
+            int ShuffleArray = new ShuffleArray().GetShuffleArray(CurrentArrayLength).Length;
         } 
 
         [Test]
