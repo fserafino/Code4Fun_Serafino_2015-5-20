@@ -48,9 +48,9 @@ namespace Code4Fun.Tests
         [Test]
         public void UpperCaseNotAllowed()
         {
-            string StringToBeEncoded = "hello Word";
+            string StringToBeEncoded = "hello World";
             string ExpectedString = "Error, one or more characters not allowed";
-            string CurrentString = new PhoneKeypad().GetTheEncodedString(StringToBeCoded);
+            string CurrentString = new PhoneKeypad().GetTheEncodedString(StringToBeEncoded);
             Assert.AreEqual(ExpectedString, CurrentString);
         }
 
