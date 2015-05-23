@@ -93,37 +93,28 @@ namespace Code4Fun.Tests
         [Test]
         public void TestFour()
         {
-
+            string StringToBeEncoded = "yes";
+            string ExpectedString = "999337777";
+            string CurrentString = new PhoneKeypad().GetTheEncodedString(StringToBeEncoded);
+            Assert.AreEqual(ExpectedString, CurrentString);
         }
 
         [Test]
         public void TestFive()
         {
-
+            string StringToBeEncoded = "foo  bar";
+            string ExpectedString = "333666_6660_022_2777";
+            string CurrentString = new PhoneKeypad().GetTheEncodedString(StringToBeEncoded);
+            Assert.AreEqual(ExpectedString, CurrentString);
         }
 
         [Test]
         public void TestSix()
         {
-
-        }
-
-        [Test]
-        public void TestSeven()
-        {
-
-        }
-
-        [Test]
-        public void TestEight()
-        {
-
-        }
-
-        [Test]
-        public void TestNine()
-        {
-
+            string StringToBeEncoded = "helloworld";
+            string ExpectedString = "4433555_55566696667775553";
+            string CurrentString = new PhoneKeypad().GetTheEncodedString(StringToBeEncoded);
+            Assert.AreEqual(ExpectedString, CurrentString);
         }
     }
 }
