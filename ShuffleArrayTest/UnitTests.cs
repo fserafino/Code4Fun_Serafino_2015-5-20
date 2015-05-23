@@ -44,5 +44,74 @@ namespace Code4Fun.Tests
             int CurrentMaximum = new ShuffleArray().GetShuffleArray(ExpectedMaximum).Max();
             Assert.AreEqual(ExpectedMaximum, CurrentMaximum);
         }
+
+        [Test]
+        public void UpperCaseNotAllowed()
+        {
+            string StringToBeEncoded = "hello Word";
+            string ExpectedString = "Error, one or more characters not allowed";
+            string CurrentString = new PhoneKeypad().GetTheEncodedString(StringToBeCoded);
+            Assert.AreEqual(ExpectedString, CurrentString);
+        }
+
+        [Test]
+        public void SpecialCharactersNotAllowed()
+        {
+
+        }
+
+        [Test]
+        public void TestOne()
+        {
+
+        }
+
+        [Test]
+        public void TestTwo()
+        {
+
+        }
+
+        [Test]
+        public void TestThree()
+        {
+
+        }
+
+        [Test]
+        public void TestFour()
+        {
+
+        }
+
+        [Test]
+        public void TestFive()
+        {
+
+        }
+
+        [Test]
+        public void TestSix()
+        {
+
+        }
+
+        [Test]
+        public void TestSeven()
+        {
+
+        }
+
+        [Test]
+        public void TestEight()
+        {
+
+        }
+
+        [Test]
+        public void TestNine()
+        {
+
+        }
     }
 }

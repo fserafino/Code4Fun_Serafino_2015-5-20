@@ -36,4 +36,9 @@ namespace Code4Fun.Exercises
             }            
         }
     }
+
+    public class PhoneKeypad
+    {
+
+    }
 }
