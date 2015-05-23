@@ -66,13 +66,19 @@ namespace Code4Fun.Tests
         [Test]
         public void TestOne()
         {
-
+            string StringToBeEncoded = "b";
+            string ExpectedString = "22";
+            string CurrentString = new PhoneKeypad().GetTheEncodedString(StringToBeEncoded);
+            Assert.AreEqual(ExpectedString, CurrentString);
         }
 
         [Test]
         public void TestTwo()
         {
-
+            string StringToBeEncoded = "aa";
+            string ExpectedString = "2_2";
+            string CurrentString = new PhoneKeypad().GetTheEncodedString(StringToBeEncoded);
+            Assert.AreEqual(ExpectedString, CurrentString);
         }
 
         [Test]
