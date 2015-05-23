@@ -1,0 +1,19 @@
+﻿Exercises
+A. Write a function that fills an array of size N with the numbers from 1 to N in random order
+without duplicates
+B. Given that the alphabet contains 26 characters and telephones only have ten digits on the
+keypad write a program that converts strings into a sequence of digits according to the
+following rules:
+	 each message will consist of only lowercase characters a-z and space characters
+	 to insert two characters in sequence from the same key, the user must pause before
+pressing the key a second time
+	 letters are mapped onto digits as
+		2=ABC 3=DEF 4=GHI 5=JKL 6=MNO
+		7=PQRS 8=TUV 9=WXYZ 0=<SPACE> _=<PAUSE>
+Some examples:
+	 b is encoded as 22
+	 aa is encoded as 2_2
+	 hi is encoded as 44_444
+	 yes is encoded as 999337777
+	 foo bar (two spaces) is encoded as 333666_6660_022_2777
+	 helloworld is encoded as 4433555_55566696667775553

@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code4Fun", "Code4Fun\Code4F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShuffleArrayTest", "ShuffleArrayTest\ShuffleArrayTest.csproj", "{0EC7AA33-3907-423A-837B-10CA9959CBF4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{27A29BA8-3FAB-41BF-85F2-A417D16CC711}"
+	ProjectSection(SolutionItems) = preProject
+		problems.txt = problems.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
